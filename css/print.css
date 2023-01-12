@@ -1,0 +1,8 @@
+/* media ctrl+p */
+@media print {
+
+    header, footer, form {
+        display: none;
+    }
+  
+}

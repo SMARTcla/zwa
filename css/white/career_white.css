@@ -1,0 +1,95 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #8bbbb8, #839bc7, #8585c0);
+}
+
+.container-career {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+
+
+.card-career {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background-color: #4c4c4c68;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: 15px;
+  }
+  
+  .tag + .tag {
+    margin-right: .5em;
+  }
+
+.tag-blue {
+    font-family:monospace;
+background: linear-gradient(to bottom, #2F80ED, #46c6f0);
+  color: #fafafa;
+}
+
+.tag-brown {
+    font-family:monospace;
+background: linear-gradient(to bottom, #c9842a,#f8b864);
+  color: #fafafa;
+}
+
+.tag-red {
+    font-family:monospace;
+background: linear-gradient(to bottom,#9e1826, #ef473a);
+  color: #fafafa;
+}
+
+
+.h3-career {
+    font-family:monospace;
+    margin: 10 10 10 10;
+    color: rgb(205, 205, 205);
+    font-size: 12px;
+  }
+  
+.h1-career {
+    font-family:monospace;
+    font-size: 24px;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .p-career {
+    font-family:monospace;
+    font-size: 15px;
+    margin: 0 0 2.5rem 0;
+    text-align: justify;
+    line-height: 1.45;
+    color: rgb(255, 255, 255);
+  }
+
